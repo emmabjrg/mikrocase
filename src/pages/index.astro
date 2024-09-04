@@ -1,12 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Kapitel from "../components/Kapitel.astro";
 import Link from "../components/Link.astro";
 ---
 
-<MainLayout title="Titel">
+<MainLayout title="Sten Simons">
   <section class="grid grid-cols-2 pt-20 p-28 pb-0">
-    <img src="/public/img/kbh-transp.webp" alt="bogens forside" />
+    <img src="/img/kbh-transp.webp" alt="bogens forside" />
     <article class="pt-24 px-1 justify-center">
       <h1 class="font-extrabold text-5xl pb-2">
         Københavnerbilleder - en guide til hipster foto
@@ -16,9 +17,9 @@ import Link from "../components/Link.astro";
     </article>
   </section>
   <section
-    class="w-full bg-customWhite p-28 grid grid-cols-2 gap-10 justify-center font-mono"
+    class="w-full bg-customWhite p-28 pt-24 grid grid-cols-2 gap-12 justify-center"
   >
-    <article class="text-end">
+    <article class="text-end leading-relaxed">
       <p>
         Københavnerbilleder er de danske streetfotografers bibel: Det er en
         fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
@@ -29,7 +30,9 @@ import Link from "../components/Link.astro";
     </article>
     <article>
       <p>
-        <ul class="grid grid-cols-[1fr_3fr] gap-x-4">
+        <ul
+          class="grid grid-cols-[1fr_3fr] leading-relaxed gap-x-2 font-mono text-sm"
+        >
           <li class="font-semibold">Titel:</li>
           <li>Københavnerbilleder - en guide til hipster foto</li>
 
@@ -52,16 +55,46 @@ import Link from "../components/Link.astro";
     </article>
   </section>
   <section
-    class="grid grid-cols-2 h-100 p-32 gap-12 pt-0 mt-[-5%] justify-center"
+    class="grid grid-cols-2 h-100 gap-12 pb-10 py-32 px-32 pt-0 mt-[-5%] justify-center"
   >
     <img src="/img/kobenhavnerbilleder_aaben_venstre_small.webp" alt="" />
     <img src="/img/kobenhavnerbilleder_oppefra_small.webp" alt="" />
   </section>
-  <section>
-    <h2 class="font-extrabold text-4xl p-32 pb-2">Kapitlerne</h2>
-    <article>
-      <k <h4>(gentag mange gange)</k>
-      <p>(gentag mange gange)</p>
-    </article>
+  <section class="pb-2 pt-6 py-32 px-32">
+    <h2 class="font-extrabold text-4xl pb-5">Kapitlerne</h2>
+    <div class="grid grid-cols-2 gap-10 gap-x-14">
+      <Kapitel
+        title="Kapitel 1 - Intro til street foto"
+        omkapitel="Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos."
+      />
+      <Kapitel
+        title="Kapitel 2 - Om at skyde street"
+        omkapitel="Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet."
+      />
+      <Kapitel
+        title="Kapitel 3 - Om at finde det rette motiv"
+        omkapitel="Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver."
+      />
+      <Kapitel
+        title="Kapitel 4 - Digital street foto"
+        omkapitel="De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. "
+      />
+      <Kapitel
+        title="Kapitel 5 - Analog street foto"
+        omkapitel="Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. "
+      />
+      <Kapitel
+        title="Kapitel 6 - Om at skyde sort/hvid"
+        omkapitel="Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. "
+      />
+      <Kapitel
+        title="Kapitel 7 - Kreative teknikker"
+        omkapitel="Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!"
+      />
+      <Kapitel
+        title="Kapitel 8 - Kom helt tæt på!"
+        omkapitel="Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…"
+      />
+    </div>
   </section>
 </MainLayout>
