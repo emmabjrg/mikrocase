@@ -103,23 +103,38 @@ import Link from "../components/Link.astro";
     </div>
   </section>
   <section class="pb-2 pt-10 py-32 px-32 w-full bg-customWhite">
-    <h2 class="font-extrabold text-4xl pb-5">Anmeldelser af bogen</h2>
-    <div class="grid grid-cols-3 gap-4 leading-relaxed pt-2">
-      <Pressen
-        stjerner="5 af 6 stjerner"
-        omtale="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."
-        anmelder="Hanne Hovgaard, Berlingeren"
-      />
-      <Pressen
-        stjerner="4 af 6 stjerner"
-        omtale="Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog?"
-        anmelder="Kim Kloggaard, Fotojournalen.dk"
-      />
-      <Pressen
-        stjerner="6 af 6 stjerner"
-        omtale="Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde."
-        anmelder="Volmer Hansen, Lukkertiden.dk "
-      />
-    </div>
+    <article>
+      <h2 class="font-extrabold text-4xl pb-5">Anmeldelser af bogen</h2>
+      <div class="grid grid-cols-3 gap-4 leading-relaxed pt-2">
+        <Pressen
+          stjerner="5 af 6 stjerner"
+          omtale="Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."
+          anmelder="Hanne Hovgaard, Berlingeren"
+        />
+        <Pressen
+          stjerner="4 af 6 stjerner"
+          omtale="Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog?"
+          anmelder="Kim Kloggaard, Fotojournalen.dk"
+        />
+        <Pressen
+          stjerner="6 af 6 stjerner"
+          omtale="Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde."
+          anmelder="Volmer Hansen, Lukkertiden.dk "
+        />
+      </div>
+    </article>
+    <article class="pt-20">
+      <h2 class="font-extrabold text-4xl pb-5">Billeder fra bogen</h2>
+      <div class="overflow">
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </article>
   </section>
 </MainLayout>
