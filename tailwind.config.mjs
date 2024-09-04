@@ -2,8 +2,13 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {  colors: {
+            customBlack: '#281F1F',
+            customBlock: '#DEBAB6',
+            customWhite: '#F5F5D2',
+            customBg: '#F8F4ED',}},
 	},
+
 	plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),

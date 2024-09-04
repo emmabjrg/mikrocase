@@ -5,22 +5,20 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Titel">
-  <section>
-    <img src="" alt="" />
-    <article>
-      <h1>Københavnerbilleder - en guide til hipster foto</h1>
-      <h3>Af Sten Simons</h3>
+  <section class="grid grid-cols-2 pt-20 p-28 pb-0">
+    <img src="/public/img/kbh-transp.webp" alt="bogens forside" />
+    <article class="pt-24 px-1 justify-center">
+      <h1 class="font-extrabold text-5xl pb-2">
+        Københavnerbilleder - en guide til hipster foto
+      </h1>
+      <h3 class="font-normal text-2xl italic pb-6">Af Sten Simons</h3>
+      <Button />
     </article>
   </section>
-  <section>
-    <article>
-      <p>
-        Titel: Københavnerbilleder - en guide til hipster foto Forfatter: Sten
-        Simons Antal sider: 344 Forlag: Mellem Linjerne ISBN: 987-6-987654-32-1
-        Pris: 399.-
-      </p>
-    </article>
-    <article>
+  <section
+    class="w-full bg-customWhite p-28 grid grid-cols-2 gap-10 justify-center font-mono"
+  >
+    <article class="text-end">
       <p>
         Københavnerbilleder er de danske streetfotografers bibel: Det er en
         fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
@@ -29,11 +27,35 @@ import Link from "../components/Link.astro";
         fotos. God læselyst!
       </p>
     </article>
+    <article>
+      <p>
+        <ul class="grid grid-cols-[1fr_3fr] gap-x-4">
+          <li class="font-semibold">Titel:</li>
+          <li>Københavnerbilleder - en guide til hipster foto</li>
+
+          <li class="font-semibold">Forfatter:</li>
+          <li>Sten Simons</li>
+
+          <li class="font-semibold">Antal sider:</li>
+          <li>344</li>
+
+          <li class="font-semibold">Forlag:</li>
+          <li>Mellem Linjerne</li>
+
+          <li class="font-semibold">ISBN:</li>
+          <li>987-6-987654-32-1</li>
+
+          <li class="font-semibold">Pris:</li>
+          <li>399.-</li>
+        </ul>
+      </p>
+    </article>
   </section>
-  <section>
-    <img src="" alt="" />
-    <img src="" alt="" />
-    <img src="" alt="" />
+  <section
+    class="grid grid-cols-2 h-100 p-32 gap-12 pt-0 mt-[-5%] justify-center"
+  >
+    <img src="/img/kobenhavnerbilleder_aaben_venstre_small.webp" alt="" />
+    <img src="/img/kobenhavnerbilleder_oppefra_small.webp" alt="" />
   </section>
   <section>
     <h2>Kapitlerne</h2>
